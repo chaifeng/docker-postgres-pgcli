@@ -24,11 +24,11 @@ This docker image is a PostgreSQL client which is provided by pgcli
 
 ## Optional Variables
 
-- `POSTGRES_HOST`
+- `PGHOST` or `POSTGRES_HOST`
   the host/ip of your postgres database
-- `POSTGRES_USER`
+- `PGUSER` or `POSTGRES_USER`
   the username of your postgres database
-- `POSTGRES_PASSWORD`
+- `PGPASSWORD` or `POSTGRES_PASSWORD`
   the password of your postgres database
 - `POSTGRES_DB`
   the database to use
