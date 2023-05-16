@@ -8,6 +8,6 @@ Vagrant.configure("2") do |config|
     docker top some-postgres || docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
     cd /vagrant
     docker build --tag chaifeng/pgcli:test ./
-    docker run --rm --link some-postgres:postgres --env PGPASSWORD=mysecretpassword pgcli -h postgres -U postgres --list
+    docker run --rm --link some-postgres:postgres --env PGPASSWORD=mysecretpassword chaifeng/pgcli:test -h postgres -U postgres --list
   SHELL
 end
