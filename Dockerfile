@@ -1,7 +1,7 @@
-FROM python:3.8.16-buster
+FROM python:3.11.3-bullseye
 MAINTAINER Chai Feng <chaifeng@chaifeng.com>
 
-RUN pip install pgcli==1.11.0 psycopg2-binary
+RUN pip install pgcli==3.5.0
 
 ADD docker-entrypoint.sh /usr/local/bin/
 
